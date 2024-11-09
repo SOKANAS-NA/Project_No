@@ -6,6 +6,7 @@
 
 
 
+
 }
 
 
@@ -168,8 +169,7 @@ a .btn {
     color: white;
     border-radius: 25px;
     padding: 15px 30px;
-    padding: 15px 30px;
-    padding: 15px 30px;
+
     border: 0px;
     border: 1px solid rgb(107, 68, 144);
 }
@@ -250,9 +250,11 @@ a .btn {
     margin: 15px;
     margin-left: 30px;
 
-    & img {
-        width: 50%;
-    }
+
+}
+
+.serviceBox img {
+    width: 50%;
 }
 
 .sectionTitle {
@@ -269,7 +271,7 @@ a .btn {
 
 
 /*fin section service*/
-/*debut section*/
+
 
 
 /*debut s portfolio*/
@@ -322,6 +324,9 @@ a .btn {
 }
 
 /*fin section portfolio*/
+
+
+
 /*section pricing*/
 .sectionPricing {
     margin-top: 150px;
@@ -372,7 +377,7 @@ a .btn {
 
 
 
-/*fin section hire me*/
+/*debut s hire */
 .sectionHireMe {
     display: flex;
     position: relative;
@@ -402,6 +407,10 @@ a .btn {
     font-size: 2.5vmin;
 
 }
+
+/*fin section hire me*/
+
+
 
 /*debut section testmonial*/
 
@@ -484,17 +493,7 @@ a .btn {
     padding-left: 18%;
 }
 
-/* ------------ Media queries ------ */
-@media (max-width: 630px) {
-    .sectionTestmonialContent {
-        flex-wrap: wrap;
-    }
 
-    .testmonialBox {
-        display: flex;
-        width: 100%;
-    }
-}
 
 
 
@@ -553,16 +552,8 @@ a .btn {
     margin: 2%;
 }
 
-/* ------------- */
 
-/* ------------ Media queries */
 
-@media (max-width:900px) {
-    .blogBox {
-        flex-wrap: wrap;
-    }
-
-}
 
 /*contact*/
 /* Code CSS permettant de mettre en forme la section contact*/
@@ -643,18 +634,6 @@ form {
     /* Caché par défaut, visible seulement en mobile */
 }
 
-/* Media query pour le responsive */
-@media (max-width: 768px) {
-    #navbar1 ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    #navbar1 .close {
-        display: block;
-    }
-}
-
 /*footer*/
 /* Code CSS permettant de mettre en forme la section footer */
 footer {
@@ -672,4 +651,36 @@ footer {
 
 a {
     text-decoration: none;
+}
+
+/* Media query pour le responsive */
+
+
+@media (max-width: 630px) {
+    .sectionTestmonialContent {
+        flex-wrap: wrap;
+    }
+
+    .testmonialBox {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (max-width:900px) {
+    .blogBox {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #navbar1 ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #navbar1 .close {
+        display: block;
+    }
 }
